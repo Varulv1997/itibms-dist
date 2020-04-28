@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML5 Template">
+    <meta name="description" content="ITIBMS - Cloud Infrastructure Management">
+    <meta name="author" content="potenzaglobalsolutions.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ITIBMS - Cloud Infrastructure Management</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images\favicon.ico">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700%7CMontserrat:500,700&display=swap" rel="stylesheet">
+
+    <!-- CSS Global Compulsory (Do not remove)-->
+    <link rel="stylesheet" href="css\font-awesome\all.min.css">
+    <link rel="stylesheet" href="css\flaticon\flaticon.css">
+    <link rel="stylesheet" href="css\bootstrap\bootstrap.min.css">
+
+    <!-- Page CSS Implementing Plugins (Remove the plugin CSS here if site does not use that feature) -->
+    <link rel="stylesheet" href="css\owl-carousel\owl.carousel.min.css">
+    <link rel="stylesheet" href="css\swiper\swiper.min.css">
+    <link rel="stylesheet" href="css\animate\animate.min.css">
+
+    <!-- Template Style -->
+    <link rel="stylesheet" href="css\style.css">
+<style>
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+.snip1360 {
+  font-family: 'Quattrocento', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: -8px;
+  min-width: 230px;
+  display: inline-block;
+  max-width: 403px;
+  margin-top: 34px;
+  margin-left: 36px;
+  width: 100%;
+  color: #141414;
+  text-align: left;
+  line-height: 1.4em;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+.snip1360 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.snip1360 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.snip1360 figcaption {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px 25px 55px;
+  position: relative;
+}
+.snip1360 figcaption:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+.snip1360 figcaption a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  background-color: #cccccc;
+  color: #000000;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  opacity: 0.65;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.snip1360 figcaption a:hover {
+  opacity: 1;
+}
+.snip1360 h2 {
+  margin: 0 0 10px;
+  font-weight: 300;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-transform: uppercase;
+}
+.snip1360 p {
+  margin: 0 0 10px;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+</style>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<style>
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+.containers {
+  margin: 0 auto;
+  width:100%;
+  max-width: 1267px;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid-1-5 {
+  border: 2px solid #5d4e65;
+  min-height: 400px;
+  padding: 1.25em;
+  position: relative;
+  text-align: center;
+  transition: all .2s ease-in-out;
+}
+@media screen and (min-width: 700px) {
+  .grid-1-5 {
+    float: left;
+    width: 50%;
+  }
+  .grid-1-5:nth-child(odd) {
+    clear: left;
+  }
+}
+@media screen and (min-width: 800px) {
+  .grid-1-5 {
+    width: 33.3333333%;
+  }
+  .grid-1-5:nth-child(3n+1) {
+    clear: left;
+  }
+  .grid-1-5:nth-child(odd) {
+    clear: none;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .grid-1-5 {
+    width: 25%;
+  }
+  .grid-1-5:nth-child(odd), .grid-1-5:nth-child(3n+1) {
+    clear: none;
+  }
+}
+
+.grid-1-5:hover {
+  background-color: #ffffff;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF53455B', endColorstr='#FF201D22');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzUzNDU1YiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzIwMWQyMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f1f0f0));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #f1f0f0 100%);
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #f1f0f0 100%);
+  background-image: linear-gradient(to bottom, #ffffff 0%, #f1f0f0 100%);
+  border-top: 2px solid #e31023;
+  border-bottom: 2px solid #c8112c;
+  box-shadow: 0px 0px 10px 0px #323232;
+  transform: scale(1.025);
+  z-index: 2;
+}
+.grid-1-5:hover:before, .grid-1-5:hover:after {
+  content: "";
+  position: absolute;
+  background-color: #f67d35;
+  color:#fff;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF67D35', endColorstr='#FFFF4F68');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y2N2QzNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmNGY2OCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f67d35), color-stop(100%, #ff4f68));
+  background-image: -moz-linear-gradient(top, #f67d35 0%, #ff4f68 100%);
+  background-image: -webkit-linear-gradient(top, #f67d35 0%, #ff4f68 100%);
+  background-image: linear-gradient(to bottom, #f67d35 0%, #ff4f68 100%);
+  top: -2px;
+  bottom: -2px;
+  width: 2px;
+}
+.grid-1-5:hover:before {
+  left: -2px;
+}
+.grid-1-5:hover:after {
+  right: -2px;
+}
+.grid-1-5:hover .button {
+  background-color: #D0042C;
+  *zoom: 1;
+  color:#fff;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFEE7A36', endColorstr='#FFEB495D');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlN2EzNiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ViNDk1ZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #D0042C), color-stop(100%, #D10A16));
+  background-image: -moz-linear-gradient(left, #D0042C 0%, #D10A16 100%);
+  background-image: -webkit-linear-gradient(left, #D0042C 0%, #D10A16 100%);
+  background-image: linear-gradient(to right, #D0042C 0%, #D10A16 100%);
+}
+
+p, ul {
+  margin: 0 0 1.5em;
+}
+
+ul {
+  color: #796583;
+  font-size: 0.75em;
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  margin: 0 0 0.8333333333333333em;
+}
+
+.button {
+  background-color: #3d3840;
+  border-radius: 0px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 0.75em 1.5em;
+  position: absolute;
+  bottom: 1.25em;
+  left: 50%;
+  margin-left: -60px;
+  text-decoration: none;
+  width: 120px;
+}
+
+.uppercase, .button, {
+  text-transform: uppercase;
+}
+
+sup, .small {
+  font-size: 0.6125em;
+}
+</style>
+  </head>
+  <body>
+
+  
+     <!--=================================
+    Header -->
+    <header class="header header-sticky default">
+      <div class="topbar">
+        <div class="container">
+          <div class="topbar-inner">
+            <div class="row">
+              <div class="col-12">
+                <div class="d-block d-md-flex align-items-center text-center">
+                  <div class="mr-3 d-inline-block">
+                    <a href="mailto:info@itibms.com"><i class="fas fa-envelope mr-2 fa-flip-horizontal"></i>info@itibms.com</a>
+                  </div>
+                  <div class="mr-auto d-inline-block">
+                    <a href="tel:1-800-555-1234"><i class="fa fa-phone mr-2 fa fa-flip-horizontal"></i>(001) 123 456 7890</a>
+                  </div>
+                  <div class="social d-inline-block">
+                    <ul class="list-unstyled">
+                      <li><a href="#"> <i class="fab fa-facebook-f"></i> </a></li>
+                      <li><a href="#"> <i class="fab fa-twitter"></i> </a></li>
+                      <li><a href="#"> <i class="fab fa-pinterest-p"></i> </a></li>
+                      <li><a href="#"> <i class="fab fa-linkedin-in"></i> </a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-static-top navbar-expand-xl">
+        <div class="container position-relative">
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse"><i class="fas fa-align-left"></i></button>
+          <a class="navbar-brand" href="index.html">
+            <img class="img-fluid" src="images\logo.png" alt="logo">
+          </a>
+          <div class="navbar-collapse collapse justify-content-center">
+            <ul class="nav navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="index.html" id="navbarDropdown" aria-haspopup="true" aria-expanded="false">Home<i class="fas fa-chevron-down fa-xs"></i></a>
+               
+              </li>
+            
+              <li class="dropdown nav-item">
+                <a href="services.html" class="nav-link" data-toggle="dropdown">Services<i class="fas fa-chevron-down fa-xs"></i></a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="services.html"><span>IBM Infrastructure</span></a></li>
+                  <li><a class="dropdown-item" href="services.html"><span>Servers Building</span></a></li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="services.html"><span>Servers Management</span></a>
+                    
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="services.html"><span>IAM Auth Roles</span></a>
+                   
+                  </li>
+                  <li><a class="dropdown-item" href="services.html"><span>Cloud Management</span></a></li>
+                </ul>
+              </li>
+              <li  class="dropdown nav-item">
+                <a href="aboutus.html" class="nav-link">About Us<i class="fas fa-chevron-down fa-xs"></i></a>
+               
+              </li>
+            
+              <li class="dropdown nav-item">
+                <a class="nav-link" href="contactus.html">Contact Us<i class="fas fa-chevron-down fa-xs"></i></a>
+                
+              </li>
+	
+              <li class="dropdown nav-item header-search">
+                <div class="search">
+                  <a class="search-btn not_click" href="javascript:void(0);"></a>
+                  <div class="search-box not-click">
+                    <form action="search.html" method="get">
+                      <input type="text" class="not-click form-control" name="search" placeholder="Search..">
+                      <button class="search-button" type="submit"> <i class="fa fa-search not-click"></i></button>
+                    </form>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <a class="btn btn-primary btn-md mr-5 mr-xl-0 d-none d-sm-block" href="#"> Get a quote </a>
+        </div>
+      </nav>
+    </header>
+    <!--=================================
+    Header -->
+
+    <!--=================================
+    Banner -->
+    <section class="slider-01">
+      <div id="main-slider" class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide-01">
+              <div class="container">
+                <div class="slide-inner">
+                  <div class="row align-items-center">
+                    <div class="col-md-6 col-xl-5">
+                      <div class="slide-content">
+                        <h1 class="animated text-white mb-4" data-swiper-animation="fadeInUp" data-duration="2.0s" data-delay="0.2s">Inovative, Powerful and Budget Friendly</h1>
+                        <a class="animated btn btn-light" data-swiper-animation="fadeInUp" data-duration="2.0s" data-delay="0.4s" href="services.html">Learn more</a>
+                      </div>
+                    </div>
+                    <div class="col-md-5 col-xl-6 offset-xl-1 d-none d-md-block position-relative z-index-1">
+                      <img class="animated img-fluid rounded-lg" data-swiper-animation="fadeInRight" data-duration="2.0s" data-delay="0.6s" src="images\slider\home-01\03.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-02">
+              <div class="container">
+                <div class="slide-inner">
+                  <div class="row align-items-center">
+                    <div class="col-md-5 col-lg-5 col-xl-6 d-none d-md-block position-relative z-index-1">
+                      <img class="animated img-fluid rounded-lg" data-swiper-animation="fadeInLeft" data-duration="2.0s" data-delay="0.2s" src="images\slider\home-01\02.jpg" alt="">
+                    </div>
+                    <div class="col-md-7 col-lg-7 col-xl-5">
+                      <div class="slide-content mr-0 mr-lg-5 mt-0 mt-lg-2 mt-xl-4">
+                        <h2 class="animated text-white mb-3 pt-0 pt-lg-5" data-swiper-animation="fadeInUp" data-duration="2.0s" data-delay="0.4s">High availability IBM servers</h2>
+                        <h5 class="animated text-white mb-4" data-swiper-animation="fadeInUp" data-duration="2.0s" data-delay="0.6s">Powerful ready-to-scale servers on demand</h5>
+                        <a class="animated btn btn-outline-primary" data-swiper-animation="fadeInUp" data-duration="2.0s" data-delay="0.8s" href="services.html">Learn more</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination swiper-pagination-left"></div>
+      </div>
+    </section>
+    <!--=================================
+    Banner -->
+
+    <!--=================================
+    Feature Info -->
+    <section class="space-ptb">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title">
+              <span class="pre-title">What we do</span>
+              <h2>Solid Infrastructure For Businesses</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-md-0 mb-4">
+            <div class="feature-info feature-info-style-1">
+              <div class="feature-info-icon">
+                <img class="img-fluid" src="images\service\feature-icon\01.png" style="
+    width: 95px;
+" alt="logo">
+              </div>
+              <div class="feature-info-content">
+                <h6 class="feature-info-title">High availability servers</h6>
+                <p>Always-on servers by famous quality brands, powered by Linux Redhat Enterprise, SUSE, Windows Servers and many more.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-md-0 mb-4">
+            <div class="feature-info feature-info-style-1">
+              <div class="feature-info-icon">
+                <img class="img-fluid" src="images\service\feature-icon\02.png" style="
+    width: 95px;
+" alt="logo">
+              </div>
+              <div class="feature-info-content">
+                <h6 class="feature-info-title">Enterprise grade security</h6>
+                <p>SSH Security Keys, IAM Defined roles per user, strong VPC Network with dedicated SHA2 firewalls to support your security.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-info feature-info-style-1">
+              <div class="feature-info-icon">
+                <img class="img-fluid" src="images\service\feature-icon\03.png" style="
+    width: 95px;
+" alt="logo">
+              </div>
+              <div class="feature-info-content">
+                <h6 class="feature-info-title">99.8% Uptime</h6>
+                <p>High speed servers with custom loggers as Stacktrace, 100% fast certified servers by Cisco and SolarWinds.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=================================
+    Feature Info -->
+
+    <!--=================================
+    Action-box -->
+    <section class="position-relative">
+      <div class="container">
+        <div class="callout stretch-bg bg-dark stretch-right">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-8 mb-md-0 mb-3">
+              <div class="callout-content">
+                <h3 class="text-white">Ready to get started?</h3>
+                <p class="mb-0 text-white">Launch with solid IBM infrastructure and conquer the world.</p>
+              </div>
+            </div>
+            <div class="col-md-4  text-md-right">
+              <div class="callout-botton">
+                <a class="btn btn-primary" href="#">Get started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=================================
+    Action-box -->
+
+<!-- partial:index.partial.html -->
+<div class="containers group">
+		<div style="
+    height: 645px;
+" class="grid-1-5">
+			<h2 style="font-size: 15px;line-height: 34px;">INFRASTRUCTURE SERVICES</h2>
+			<h2 style="font-size: 15px;line-height: 34px;">Business Continuity and Disaster Recovery</h2>
+			<p>Architectural Design and Implementation of high end information and technology systems including:</p>
+			<ul>
+				<li>Network systems</li>
+				<li>Servers systems</li>
+				<li>Databases systems</li>
+			</ul>
+			<p>First 30* diagnosis and solution proposal service.</p>
+            <p>Build an Advanced Single Point of Failure Remedy to keep you high demanding servers up (Government and Enterprise level).</p>
+			<a href="contactus.html" class="button">Get A Quote</a>
+		</div>
+		<div style="
+    height: 645px;
+" class="grid-1-5">
+			<h2 style="font-size: 15px;line-height: 34px;">ARTIFICIAL INTELLIGENCE</h2>
+			<h2 style="font-size: 15px;line-height: 34px;">Machine Learning</h2>
+			<p>Building and deploying machine learning models.</p>
+			<p>Deep learning neural network tools for smarter devices.</p>
+			<p>Augmented intelligence for the healthcare, insurance and financial services.</p>
+			<p>Predictive analytics and machine learning tools that aide in solving critical business challenges.</p>
+			<p>Credit decision for  consumer and small business loan applicants.</p>
+			<p>Quantitative trading AI-driven fraud prevention.</p>
+			<a href="contactus.html" class="button">Get A Quote</a>	
+		</div>
+		<div style="
+    height: 645px;
+" class="grid-1-5">
+			<h2 style="font-size: 15px;line-height: 34px;">VIABLE SYSTEM SECURITY</h2>
+			<h2 style="font-size: 15px;line-height: 34px;">Regulation Compliance Analysis</h2>
+			<p>Cyber Security is a set of techniques that are used to protect the internet-connected systems.</p>
+			<p>It can protect computers, networks, software, and data.</p>
+			<p>Vulnerability Assessment, Penetration Testing, Security Code Review.</p>
+			<p>Infrastructure Security Audit, Compliance Testing.</p>
+			<p>Network security.</p>
+			<p>Endpoint security.</p>
+			<p>Email security.</p>
+			<p>Managed Security, and Cloud security.</p>
+			<a href="contactus.html" class="button">Get A Quote</a>		
+		</div>
+		<div style="
+    height: 645px;
+" class="grid-1-5">
+			<h2 style="font-size: 15px;line-height: 34px;">GPS and GIS</h2>
+			<h2 style="font-size: 15px;line-height: 34px;">BigData processing</h2>
+			<p>Fleet Management and tracking.</p>
+			<p>Location analysis algorithms for government and private businesses.</p>
+			<p>Geo Marketing Solutions.</p>
+			<p>Geographical data and Navigation services support.</p>
+			<p>Online mapping with data on demographics, Utilities.</p>
+			<a href="contactus.html" class="button">Get A Quote</a>		
+		</div>
+		
+	</div>
+<!-- partial -->
+
+
+    <!--=================================
+    Helping Companies -->
+    <section class="space-ptb">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-md-0 mb-4">
+            <div class="chart" id="chart-column"></div>
+          </div>
+          <div class="col-md-6">
+            <div class="section-title">
+              <span class="pre-title">Our goal</span>
+              <h2>Helping companies attempt new possibilities</h2>
+            </div>
+            <p class=" mb-4">More than 1400 businesses drastically improved their speed and upscaled their functions by migrating to IBM via ITIBMS</p>
+            <div class="companies-item mb-4">
+              <div class="row d-flex align-items-center">
+                <div class="col-md-4 col-lg-3">
+                  <span class="display-4 mb-0 text-dark font-weight-bold">70%</span>
+                </div>
+                <div class="col-md-8 col-lg-9">
+                  <h6 class="mb-1">After moving to ITIBMS</h6>
+                  <p class="small mb-0">More than 80% businesses swapped places in the market.</p>
+                </div>
+              </div>
+              <div class="progress mt-3" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 93%" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="companies-item">
+              <div class="row d-flex align-items-center">
+                <div class="col-md-4 col-lg-3">
+                  <span class="display-4 mb-0 text-dark font-weight-bold">30%</span>
+                </div>
+                <div class="col-md-8 col-lg-9">
+                  <h6 class="mb-1">Using regular cloud options</h6>
+                  <p class="small mb-0">Still pushing the limits of regular limited servers</p>
+                </div>
+              </div>
+              <div class="progress mt-3" style="height: 7px;">
+                <div class="progress-bar" role="progressbar" style="width: 79%" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=================================
+    Helping Companies -->
+
+    <!--=================================
+    Case Study -->
+    <section class="case-study-section">
+      <div class="space-ptb bg-holder bg-primary" style="background-image: url('images/bg/pattern-01.png'); background: #1b1b1f !important;">
+        <div class="container">
+          <div class="section-title text-center pb-5 pb-lg-3">
+            <span class="pre-title text-white">Reports From Our Clients</span>
+            <h2 class="text-white">Our recent case studies</h2>
+          </div>
+        </div>
+      </div>
+      <div class="case-study mt-n6">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4">
+              <div class="case-study-item">
+                <div class="case-study-img">
+                  <img class="img-fluid" src="images\case-study\01.jpg" alt="">
+                  <a href="#"><i class="far fa-arrow-alt-circle-right"></i></a>
+                </div>
+                <div class="case-study-info">
+                  <a class="case-study-category" href="#">Strategy</a>
+                  <h6 class="case-study-title"><a href="#">Building the perfect server for your next business</a></h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4">
+              <div class="case-study-item">
+                <div class="case-study-img">
+                  <img class="img-fluid" src="images\case-study\02.jpg" alt="">
+                  <a href="#"><i class="far fa-arrow-alt-circle-right"></i></a>
+                </div>
+                <div class="case-study-info">
+                  <a class="case-study-category" href="#">Cloud Computing</a>
+                  <h6 class="case-study-title"><a href="#">Building complex parallel App Service in IBM Cloud</a></h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="case-study-item">
+                <div class="case-study-img">
+                  <img class="img-fluid" src="images\case-study\03.jpg" alt="">
+                  <a href="#"><i class="far fa-arrow-alt-circle-right"></i></a>
+                </div>
+                <div class="case-study-info">
+                  <a class="case-study-category" href="#">Finance</a>
+                  <h6 class="case-study-title"><a href="#">Breaking down the cost of your server usages</a></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=================================
+    Case Study -->
+
+<figure class="snip1360">
+  <img src="https://thehackernews.com/images/-6wbWq68eVBA/Xo2bCtTB_nI/AAAAAAAA2po/SSQlOjvoSSY_AB_mIq18Nd9ItUWt6yTSACLcBGAsYHQ/s728-e100/ddos-botnet.jpg" alt="News1" />
+  <figcaption>
+    <h2>How An Image Could've Let Attackers Hack Microsoft Teams Accounts</h2>
+    <p>Microsoft has patched a worm-like vulnerability in its Teams workplace video chat and collaboration platform that could have allowed attackers to take over an organization's entire roster of Teams accounts just by sending participants a malicious link.</p><a href="#" class="read-more">Read More</a>
+  </figcaption>
+</figure>
+<figure class="snip1360 hover"><img src="https://thehackernews.com/images/-BrtRjVpxwFE/XqLBatj5KxI/AAAAAAAAAQs/LsvbqmB8WfkaP19NuLGn1B0fOOKtFHy8QCLcBGAsYHQ/s728-e100/usb-botnet-malware.jpg" alt="News2" />
+  <figcaption>
+    <h2>Malicious USB Drives Infect 35,000 Computers With Crypto-Mining Botnet</h2>
+    <p>Cybersecurity researchers from ESET on Thursday said they took down a portion of a malware botnet comprising at least 35,000 compromised Windows systems that attackers were secretly using to mine Monero cryptocurrency.</p><a href="#" class="read-more">Read More</a>
+  </figcaption>
+</figure>
+<figure class="snip1360"><img src="https://thehackernews.com/images/-1-V1CDxvOB8/XqFmKqqvonI/AAAAAAAAAQU/TdBl2volgoYxz4-wHlYhcaFcWDyl2dEiACLcBGAsYHQ/s728-e100/money.jpg" alt="News3" />
+  <figcaption>
+    <h2>Hackers Trick 3 British Private Equity Firms Into Sending Them $1.3 Million</h2>
+    <p>In a recent highly targeted BEC attack, hackers managed to trick three British private equity firms into wire-transferring a total of $1.3 million to the bank accounts fraudsters have access to —thought they closed an investment deal with some startups.</p><a href="#" class="read-more">Read More</a>
+  </figcaption>
+</figure>
+
+    <!--=================================
+    Testimonial -->
+    <section style="padding: 21px 0 !important;" class="space-ptb">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title text-center">
+              <span class="pre-title">Client Feedback</span>
+              <h2>Client Opinions & Reviews </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-8 mb-4 mb-lg-0">
+            <div class="owl-carousel testimonial testimonial-style-1 owl-nav-bottom-left" data-nav-dots="true" data-nav-arrow="false" data-items="1" data-md-items="1" data-sm-items="1" data-xs-items="1" data-xx-items="1" data-space="0" data-autoheight="false">
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="testimonial-author-img">
+                    <img class="img-fluid" src="images\avatar\01.jpg" alt="">
+                  </div>
+                  <div class="testimonial-details">
+                    <div class="testimonial-content">
+                      <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                      </div>
+                      <p class="mb-0">The most essential aspect of a team is the ability to grow with experience in terms of understanding and skill. The team we have at Finaxo has been very expert at this.</p>
+                    </div>
+                    <div class="testimonial-info">
+                      <div class="testimonial-author">
+                        <h6 class="author-name">Michael Bean</h6>
+                        <span class="author-designation">HR, Google (Mumbai)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="testimonial-author-img">
+                    <img class="img-fluid" src="images\avatar\02.jpg" alt="">
+                  </div>
+                  <div class="testimonial-details">
+                    <div class="testimonial-content">
+                      <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                      </div>
+                      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="testimonial-info">
+                      <div class="testimonial-author">
+                        <h6 class="author-name">Smith Willman</h6>
+                        <span class="author-designation">Manager, Slack (New York)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="testimonial-author-img">
+                    <img class="img-fluid" src="images\avatar\03.jpg" alt="">
+                  </div>
+                  <div class="testimonial-details">
+                    <div class="testimonial-content">
+                      <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                      </div>
+                      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="testimonial-info">
+                      <div class="testimonial-author">
+                        <h6 class="author-name">Felica Queen</h6>
+                        <span class="author-designation">CTO, envision (London)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-xl-3 offset-lg-0 offset-xl-1">
+            <div class="counter counter-with-plus p-0">
+              <div class="counter-item">
+                <div class="counter-content">
+                  <span class="timer text-primary display-4" data-to="570" data-speed="1000">570</span>
+                  <p class="mt-3"><b>Once you have a clear understanding of what you want, it is critical</b></p>
+                  <a class="btn btn-outline-primary" href="#">Read the case studies</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=================================
+    Testimonial -->
+
+
+
+     <!--=================================
+    footer-->
+    <footer class="space-pt footer bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer-contact-address">
+              <h6 class="text-white mb-4">Where To Find Us </h6>
+              <ul class="list-unstyled">
+                <li>
+                  <i style="color:#fff;" class="fas fa-map-marker-alt"></i>
+                  <div class="address-info">
+                    <h6 style="color:#fff;">1500 XXXXX Street </h6>
+                    <p style="color:#fff;">Asheville, NC, 15000 </p>
+                  </div>
+                </li>
+                <li>
+                  <i style="color:#fff;" class="far fa-envelope"></i>
+                  <div class="address-info">
+                    <h6 style="color:#fff;">info@itibms.com </h6>
+                    <p style="color:#fff;">24/7 Support </p>
+                  </div>
+                </li>
+                <li>
+                  <i style="color:#fff;" class="fas fa-headphones-alt"></i>
+                  <div class="address-info">
+                    <h6 style="color:#fff;">+(001) 123-456-7890 </h6>
+                    <p style="color:#fff;">24/7 online support </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="follow-us mt-4 mt-md-5">
+              <h6 class="text-white mb-4">Follow Us </h6>
+              <ul class="list-unstyled">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-8  mt-4 mt-md-0">
+            <h3 class="text-white mb-3">Sign up for our newsletter
+</h3>
+            <p class="lead  mb-4 mb-md-5">Sign up to our Newsletter to get the latest news and offers.</p>
+            <div class="row">
+              <div class="col-sm-9">
+                <form class="form-inline input-with-btn">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter your email">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+              </div>
+            </div>
+            <div class="footer-link">
+              <div class="row">
+                <div class="col-sm-4 mt-4 mt-md-5">
+                  <h6 class="text-white">Discover</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#"><span>About us</span></a></li>
+                    <li><a href="#"><span>Our services</span></a></li>
+                    <li><a href="#"><span>Contact us</span></a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-8 mt-4 mt-md-5">
+                  <h6 class="text-white">Services</h6>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <ul class="list-unstyled">
+                        <li><a href="#"><span>IBM Infrastructure</span></a></li>
+                        <li><a href="#"><span>Servers Building</span></a></li>
+                        <li><a href="#"><span>Servers Management</span></a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6">
+                      <ul class="list-unstyled">
+                        <li><a href="#">IAM Auth Roles</a></li>
+                        <li><a href="#"><span>Cloud Management</span></a></li>
+                        <li><a href="#"><span>Servers Migrating</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="mb-0 text-white"> &copy; Copyright <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span> <a href="index.html"> ITIBMS </a> All Rights Reserved </p>
+            </div>
+            <div class="col-md-6  mt-2 mt-md-0 copyright text-md-right">
+              LABIDA Sponsored Company
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--=================================
+    footer-->
+
+    <!--=================================
+    Back To Top -->
+    <div id="back-to-top" class="back-to-top">
+      <a href="#"><i class="fas fa-angle-up"></i> </a>
+    </div>
+    <!--=================================
+    Back To Top -->
+
+    <!--=================================
+    Javascript -->
+
+    <!-- JS Global Compulsory (Do not remove)-->
+    <script src="js\jquery-3.4.1.min.js"></script>
+    <script src="js\popper\popper.min.js"></script>
+    <script src="js\bootstrap\bootstrap.min.js"></script>
+
+    <!-- Page JS Implementing Plugins (Remove the plugin script here if site does not use that feature)-->
+    <script src="js\jquery.appear.js"></script>
+    <script src="js\counter\jquery.countTo.js"></script>
+    <script src="js\owl-carousel\owl.carousel.min.js"></script>
+    <script src="js\swiper\swiper.min.js"></script>
+    <script src="js\swiperanimation\SwiperAnimation.min.js"></script>
+    <script src="js\easy-pie-chart\easy-pie-chart.js"></script>
+    <script src="js\apexcharts\apexcharts.min.js"></script>
+    <script src="js\apexcharts\charts.js"></script>
+
+    <!-- Template Scripts (Do not remove)-->
+    <script src="js\custom.js"></script>
+
+  </body>
+</html>
