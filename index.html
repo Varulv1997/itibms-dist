@@ -34,7 +34,7 @@
   position: relative;
   overflow: hidden;
   margin: -8px;
-  min-width: 230px;
+  min-width: 130px;
   display: inline-block;
   max-width: 403px;
   margin-top: 34px;
@@ -45,6 +45,11 @@
   line-height: 1.4em;
   font-size: 16px;
   background-color: #ffffff;
+}
+@media screen and (max-width: 600px) {
+  .snip1360 {
+      margin-left: 0px;
+  }
 }
 .snip1360 * {
   -webkit-box-sizing: border-box;
@@ -133,7 +138,7 @@
 @media screen and (min-width: 700px) {
   .grid-1-5 {
     float: left;
-    width: 50%;
+    width: 20%;
   }
   .grid-1-5:nth-child(odd) {
     clear: left;
@@ -247,6 +252,7 @@ ul li {
 sup, .small {
   font-size: 0.6125em;
 }
+.connecthover:hover {background:#3a4269; color:#fff;}
 </style>
   </head>
   <body>
@@ -334,6 +340,7 @@ sup, .small {
             </ul>
           </div>
           <a class="btn btn-primary btn-md mr-5 mr-xl-0 d-none d-sm-block" href="#"> Get a quote </a>
+          <a style="margin-left:15px; margin-left: 15px; background: #43508e; border: #43508e;" class="btn btn-primary btn-md mr-5 mr-xl-0 d-none d-sm-block connecthover" href="#"> Connect your server </a>
         </div>
       </nav>
     </header>
