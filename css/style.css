@@ -2999,7 +2999,7 @@ ol.list {
   /* Header Style 01 */
   .header.default .navbar {
     position: relative;
-	height:75px;
+	height:75px !important;
     background: #ffffff; }
     .header.default .navbar .navbar-nav .nav-item {
       margin-right: 0; }
